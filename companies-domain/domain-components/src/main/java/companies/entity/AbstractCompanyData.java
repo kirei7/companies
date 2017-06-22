@@ -3,16 +3,22 @@ package companies.entity;
 import companies.Company;
 import companies.SubsidiaryCompany;
 
-import javax.persistence.MappedSuperclass;
+import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.List;
 
 @MappedSuperclass
-public class AbstractCompanyData implements CompanyData<Company> {
+public class AbstractCompanyData<T extends Company> implements CompanyData<T> {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+    @Column(nullable = false)
     private String name;
+    @Column(nullable = false)
     private BigDecimal estimatedEarnings;
-    List<SubsidiaryCompany> childCompanies;
+    @Column(nullable = false)
+    private List<SubsidiaryCompany> childCompanies;
 
     @Override
     public Long getId() {
