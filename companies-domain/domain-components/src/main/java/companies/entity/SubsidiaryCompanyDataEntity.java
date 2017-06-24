@@ -1,14 +1,13 @@
 package companies.entity;
 
-import companies.Company;
-import companies.SubsidiaryCompany;
+import companies.business.Company;
 
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 
 @Entity
 public class SubsidiaryCompanyDataEntity
-        extends AbstractCompanyData<SubsidiaryCompany>
+        extends AbstractCompanyData
         implements SubsidiaryCompanyData {
 
     @ManyToOne

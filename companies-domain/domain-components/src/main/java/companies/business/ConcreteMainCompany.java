@@ -3,10 +3,10 @@ package companies.business;
 import companies.entity.CompanyData;
 
 public class ConcreteMainCompany
-        extends AbstractCompany<MainCompany>
+        extends AbstractCompany<CompanyData>
         implements MainCompany
 {
-    public ConcreteMainCompany(CompanyData<MainCompany> companyData) {
+    public ConcreteMainCompany(CompanyData companyData) {
         super(companyData);
     }
 }

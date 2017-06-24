@@ -4,8 +4,8 @@ import companies.entity.CompanyData;
 
 import java.math.BigDecimal;
 
-public interface Company<T extends Company> {
+public interface Company<T extends CompanyData> {
     String getName();
     BigDecimal getTotalEarnings();
-    CompanyData<T> getCompanyData();
+    T getCompanyData();
 }

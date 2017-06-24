@@ -1,10 +1,8 @@
 package companies.dao;
 
 import companies.business.Company;
-import companies.business.MainCompany;
 import companies.business.SubsidiaryCompany;
 import companies.entity.CompanyData;
-import companies.entity.MainCompanyDataEntity;
 
 import java.util.List;
 

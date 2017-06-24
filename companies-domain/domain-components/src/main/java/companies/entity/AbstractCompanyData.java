@@ -1,14 +1,13 @@
 package companies.entity;
 
-import companies.Company;
-import companies.SubsidiaryCompany;
+import companies.business.SubsidiaryCompany;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.List;
 
 @MappedSuperclass
-public class AbstractCompanyData<T extends Company> implements CompanyData<T> {
+public class AbstractCompanyData implements CompanyData {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

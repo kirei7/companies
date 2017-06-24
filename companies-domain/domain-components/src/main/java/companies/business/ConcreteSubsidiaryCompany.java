@@ -1,13 +1,13 @@
 package companies.business;
 
-import companies.entity.CompanyData;
+import companies.entity.SubsidiaryCompanyData;
 
 public class ConcreteSubsidiaryCompany
-        extends AbstractCompany<SubsidiaryCompany>
+        extends AbstractCompany<SubsidiaryCompanyData>
         implements SubsidiaryCompany {
     private Company parent;
 
-    public ConcreteSubsidiaryCompany(CompanyData<SubsidiaryCompany> companyData) {
+    public ConcreteSubsidiaryCompany(SubsidiaryCompanyData companyData) {
         super(companyData);
     }
 

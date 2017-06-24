@@ -1,5 +1,7 @@
 package companies.business;
 
-public interface SubsidiaryCompany extends Company<SubsidiaryCompany> {
+import companies.entity.SubsidiaryCompanyData;
+
+public interface SubsidiaryCompany extends Company<SubsidiaryCompanyData> {
     Company getParent();
 }

@@ -2,12 +2,8 @@ package companies.dao;
 
 import companies.business.SubsidiaryCompany;
 import companies.entity.SubsidiaryCompanyDataEntity;
-import companies.repository.MainCompanyEntityRepository;
 import companies.repository.SubsidiaryCompanyEntityRepository;
-import companies.util.factory.CompanyMainFactory;
 import companies.util.factory.CompanySubsidiaryFactory;
-
-import java.util.List;
 
 public class SubsidiaryCompanyDao extends AbstractCompanyDao<SubsidiaryCompany, SubsidiaryCompanyDataEntity> {
 

@@ -1,12 +1,11 @@
 package companies.entity;
 
-import companies.Company;
-import companies.SubsidiaryCompany;
+import companies.business.SubsidiaryCompany;
 
 import java.math.BigDecimal;
 import java.util.List;
 
-public interface CompanyData<T extends Company> {
+public interface CompanyData {
     Long getId();
     void setId(Long id);
 

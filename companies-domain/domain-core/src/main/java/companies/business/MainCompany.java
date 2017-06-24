@@ -1,4 +1,6 @@
 package companies.business;
 
-public interface MainCompany extends Company<MainCompany> {
+import companies.entity.CompanyData;
+
+public interface MainCompany extends Company<CompanyData> {
 }
